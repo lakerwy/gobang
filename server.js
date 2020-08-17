@@ -6,12 +6,12 @@ var server=require('http').Server(app)
 var io=require('socket.io')(server)
 
 //启动服务器
-//192.168.1.110
+//下面的192.168.1.110 修改为自己电脑的IP地址，cmd 输入ipconfig 获取IP地址
 server.listen(3000,'192.168.1.110',(err)=>{
     if(err){
         console.error(err);
     }else{
-        console.info("服务器启动成功1");
+        console.info("服务器启动成功,app run at: http://192.168.1.110:3000/");
     }
 })
 
