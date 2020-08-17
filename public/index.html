@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#chess{
+    display: block;
+    margin-top:0;
+    margin-left: 50px;
+    box-shadow: -2px -2px 2px #efefef,5px 5px 5px #b9b9b9;
+    background: papayawhip; 
+    cursor: pointer;
+}
+#restart{
+    margin-left: 350px;
+    margin-top: 10px;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    background: #45c01a;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+p {display: inline; margin-left: 50px; margin-right: 400px;
+line-height: 40px; font-size: 24px; text-align: center; text-shadow: 2px 2px 2px gray;}
+</style>
+</head>
+<body>
+    <p id="color"></p><p id="tags1"></p>
+    <canvas id="chess" width="750" height="750"></canvas>
+    <input type="button" id="restart" value="重新开始" /> 
+</body>
+</html>
+<!-- <script src="https://lib.baomitu.com/socket.io/2.3.0/socket.io.js"></script> -->
+<script src="http://192.168.1.110:3000/socket.io/socket.io.js"></script>
+<script src="./client.js">
+</script>
